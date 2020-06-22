@@ -6,5 +6,5 @@ CAUTION! Work in progress!
 
 The ResNet50 box shows the smallest set of categories whose predicted probs sum up to or exceed *confidence*, i.e. 1-*significance_value*.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ptocca/ILSVRC2012_CP/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ptocca/ILSVRC2012_CP/master?urlpath=%2Fapps%2FILSRVC_CP-Demo.ipynb)
 
