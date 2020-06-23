@@ -8,7 +8,8 @@ The image can be selected out of a set of 2000.<br>
 The label for the image is shown below the image itself.
 The significance level \(\epsilon\) can varied from 0 to 1.<br>
 Below the sliders you can see two boxes containing the predictions, one for ResNet50 and one for CP.<br>
-It is also possible to choose between two forms of NCM, referred to here as NegProb and Ratio.
+It is also possible to choose between two forms of NCM, referred to here as NegProb and Ratio.<br>
+The plot shows the ECDF of the Non Conformity Measures for the label with the highest p-value. <br>
 
 <h2>Predictions</h2>
 CP outputs sets of labels, whereas the ResNet50 model outputs a distribution of probability over the 1,000 labels defined for the ImageNet data set.
@@ -18,7 +19,7 @@ Specifically, we want to build a prediction set with a validity property, i.e. a
 confidence level \( 1-\epsilon \). To do that, we output the smallest set of labels whose total probability 
 (as estimated by ResNet50) exceeds \(1-\epsilon\). <br>
 For CP, we show the prediction set for the chosen significance level.<br>
-One should note that the ResNet50 sets constructed above are conservative, as the probability of hit equals or exceeds the targeted confidence.
+One should note that the ResNet50 sets constructed above are conservative, as the probability of hit equals or exceeds the targeted confidence.<br>
 
 
 <h2>Calibration set and test set</h2>
