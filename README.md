@@ -5,7 +5,9 @@ The demo uses `Keras Applications` model for ResNet50 [[paper]](https://arxiv.or
 
 CAUTION! Work in progress!
 
+This was implemented with Holoviz Panel.
+
 The demo can be run on BinderHub.
  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ptocca/ILSVRC2012_CP/master?urlpath=%2Fapps%2FILSRVC_CP-Demo.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ptocca/ILSVRC2012_CP/holoviz?urlpath=%2Fapps%2FILSRVC_CP-Demo.ipynb)
 
