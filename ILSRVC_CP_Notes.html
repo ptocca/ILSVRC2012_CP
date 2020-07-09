@@ -5,22 +5,27 @@ h4 {margin-left: 3em;}
 p,ul {margin-left: 4em;}</style>
 
 <h1>Notes</h1>
-<p>This is a demo of Conformal Prediction,
-using a pre-trained ResNet50 model on the ImageNet LSVR Challenge 2012 data set. It shows the predictions output by the ResNet50 model and by a CP using a Non Conformity
- Measure computed on the output of the ResNet50 model.<br>
+<p>This is a demo of Conformal Prediction, a framework for prediction with fixed error rate.
+ In this demo, CP is applied on top of a pre-trained ResNet50 model on the ImageNet LSVR Challenge 2012 data set.<br>
  Conformal Predictors output prediction sets (i.e. not just one label like conventional classifiers and regressors),
  with the property of <b>validity</b>: for any chosen target error rate \(\epsilon\), the prediction set fails to contain the
  correct label (i.e. makes an error) with relative frequency \(\epsilon\), barring statistical fluctuation. <br>
- The reader is referred to the monograph <cite> <a href="http://www.alrw.net/">[Gammerman et al., Algorithmic Learning in Random World]</a> </cite> for the full discussion of Conformal Predictors.<br>
+ Specifically, this demo use Class-conditional Inductive Conformal Predictors.
+ While the demo can be useful to illustrate some aspect of CP, these notes are not meant to be an introduction to CP.
+ The reader is referred to the monograph
+ <cite> <a href="http://www.alrw.net/">[Gammerman et al., Algorithmic Learning
+  in Random World]</a> </cite> for the full discussion of Conformal Predictors.<br>
  </p>
 
 <h2>Details of this demo</h2>
-<p> The image can be selected out of a set of 2000 with a slider.<br>
-The label for the image is shown below the image itself.
- Another slider allows to choose tThe significance level \(\epsilon\) (i.e. the target error rate) can varied from 0 to 1.</p>
-<p>Below the sliders you can see two boxes containing the predictions, one for ResNet50 and one for CP.<br>
-It is also possible to choose between two forms of NCM, referred to here as NegProb and Ratio.<br>
- The plot shows the ECDF of the Non Conformity Measures for the label selected in the CP prediction set (or the one with the largest p-value).</p>
+<p> The user can choose an image out of a set of 2000 using a slider.<br>
+The ImageNet label for the image is shown below the image itself.
+ Another slider allows to choose the significance level \(\epsilon\) (i.e. the target error rate) which can vary from 0 to 1.</p>
+<p>Below the sliders you can see two boxes containing the prediction set, one for ResNet50 and one for CP.<br>
+It is also possible to choose between two forms of Non Conformity Measures, referred to here as NegProb and Ratio.<br>
+ The plot shows the Empirical Cumulative Distribution Function (ECDF) of the Non Conformity Measure for the label
+ selected in the CP prediction set shown on the right (or the one with the largest p-value). The ECDF is calculated on
+ the calibration examples (plus hypothetical completion). </p>
 
 <h2>Predictions</h2>
 <p>CP outputs sets of labels, whereas the ResNet50 model outputs a distribution of probability over the 1,000 labels defined for the ImageNet data set.
