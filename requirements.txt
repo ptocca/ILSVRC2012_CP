@@ -4,6 +4,6 @@ h5py==2.10.0
 ipywidgets==7.5.1
 pillow==8.3.2
 appmode==0.7.0
-joblib==0.14.1
+joblib==1.2.0
 statsmodels>=0.11.0
 plotly==4.7.1
