@@ -7,5 +7,5 @@ CAUTION! Work in progress!
 
 The demo can be run on BinderHub.
  
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ptocca/ILSVRC2012_CP/master?urlpath=%2Fapps%2FILSRVC_CP-Demo.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ptocca/ILSVRC2012_CP/master?urlpath=%2Ftree%2FILSRVC_CP-Demo.ipynb)
 
