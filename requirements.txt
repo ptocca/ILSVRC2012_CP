@@ -1,6 +1,6 @@
 tensorflow>=2.7.4
 numpy>=1.14.5
-h5py==2.10.0
+h5py>=2.10.0
 ipywidgets==7.5.1
 pillow==8.3.2
 appmode==0.7.0
