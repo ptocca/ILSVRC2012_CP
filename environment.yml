@@ -2,7 +2,7 @@ channels:
   - conda-forge
 dependencies:
   - appmode
-  - tensorflow=2.7.4
+  - tensorflow=2.15
   - numpy>=1.14.5
   - h5py>=2.10.0
   - ipywidgets>=7.5.1
